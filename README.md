@@ -1,20 +1,20 @@
 # DeepCLSMOTE_LOSS
 
 Project Future Extensions
-This document outlines the planned extensions and improvements for this project, focusing on enhancing model performance and applicability, to submit the work to PAKDD 2026.
+This document outlines the planned extensions and improvements for this project, focusing on enhancing model performance and applicability, in preparation for submission to PAKDD 2026.  
 
-1. Deep Learning Model Enhancements
-1.1 Update the Loss Function  
-We plan to explore and integrate advanced loss functions to enhance the learning process, with a specific focus on Contrastive Learning. The goal is to better separate minority classes from majority classes in the feature space.
+1. Deep Learning Model Enhancements  
+1.1 Update the Loss Function     
+We plan to explore and integrate advanced loss functions to enhance the learning process, with a specific focus on Contrastive Learning. The goal is to better separate minority classes from majority classes in the feature space.  
 
-/dot Proposed Formula (Current):
+Proposed Formula (Current):
 $Minimize\ Loss = MSE(x, x_i) + MSE(c_i, c_{i}^{main}) + MSE^{-1}(c_i, c_j)$
-Future Loss Functions (Extensions):
 
-Self-Contrastive Learning Loss:
+ 
+Self-Contrastive Learning Loss:  
 Proposed Formula:
-$Minimize\ Loss = MSE(x, x_i) + NT-XentLoss(c_i, c_{i}^{main})$
-Note: NT-Xent Loss refers to Normalized Temperature-Scaled Cross-Entropy Loss.
+$Minimize\ Loss = MSE(x, x_i) + NT-XentLoss(c_i, c_{i}^{main})$  
+Note: NT-Xent Loss refers to Normalized Temperature-Scaled Cross-Entropy Loss.  
 
 Supervised Contrastive Learning Loss:
 Goal: Maximize the agreement between positive pairs (instances from the same class) and minimize the agreement between negative pairs (instances from different classes).
