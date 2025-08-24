@@ -1,7 +1,7 @@
 # DeepCLSMOTE_LOSS
 
 Project Future Extensions
-This document outlines the planned extensions and improvements for this project, focusing on enhancing model performance and applicability, in preparation for submission to PAKDD 2026.  
+This document outlines the planned extensions and improvements for this project, focusing on enhancing model performance and applicability.
 
 1. Update the Loss Function     
 We plan to explore and integrate advanced loss functions to enhance the learning process, with a specific focus on Contrastive Learning. The goal is to better separate minority classes from majority classes in the feature space.  
